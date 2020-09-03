@@ -361,7 +361,7 @@ const getCookies = async (uri, format, callback, profileOrPath) => {
 						return;
 					}
 
-					if (!tough.domainMatch(host, cookie.host_key, true)) {
+					if (!tough.domainMatch(cookie.host_key, host, true)) {
 						return;
 					}
 
